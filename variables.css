@@ -1,0 +1,11 @@
+:root{
+    /* background-color2: hsl(234, 12%, 34%); */
+   --border-color: hsl(229, 6%, 66%);
+  background-color: hsl(0, 0%, 98%);
+  --base-font:  'Montserrat', sans-serif;
+  --teamBuilder-border: hsl(0, 78%, 62%);
+  --supervisor-border: hsl(180, 62%, 55%);
+  --karma-border: hsl(34, 97%, 64%);
+ --calculator-border: hsl(212, 86%, 64%);
+
+}

@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--base-font);
+    /* position: relative; */
+}
+.first-heading{
+    margin-top: 3vw;
+    margin-bottom: 1vw;
+    font-size: 1.7vw;
+    color: var(--border-color);
+}
+.second-heading{
+    font-size: 1.7vw;
+    margin-bottom: 1vw;
+    font-weight: 900;
+}
+main p:nth-child(3), main p:nth-child(4){
+    font-size: 0.75vw;
+    align-items: center;
+    color: var(--border-color);
+}
+main p:nth-child(4){
+    margin-bottom: 4vw;
+}
+.supervisor-section, .team-builder-section, .karma-section, .calculator-section{
+    width: 20vw;
+    height: 15vw;
+    border: 1px solid var(--background-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 2px var(--border-color);
+}
+.supervisor-section p:first-child, .team-builder-section p:first-child, .karma-section p:first-child, .calculator-section p:first-child{
+    font-size: 1.25vw;
+    font-weight: 700;
+    padding-left: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 0.75vw;
+}
+
+.supervisor-section p:nth-child(2), .team-builder-section p:nth-child(2), .karma-section p:nth-child(2), .calculator-section p:nth-child(2){
+    font-size: 0.90vw;
+    font-weight: 100;
+    padding-left: 1vw;
+    color: var(--border-color);
+}
+.supervisor-section img:nth-child(3), .team-builder-section img:nth-child(3), .karma-section img:nth-child(3), .calculator-section img:nth-child(3){
+    position: relative;
+    top:2vw;
+    left: 15vw;
+    width: 3vw;
+    height: 3vw;
+}
+.supervisor-section{
+    /* position: absolute;
+    left: 18vw;
+    bottom: 17vw; */
+    margin-right: 2vw;
+    border-top: 5px solid var(--supervisor-border);
+}
+.calculator-section{
+    /* position: absolute;
+    right: 18vw;
+    bottom: 17vw; */
+    margin-left: 2vw;
+    border-top: 5px solid var(--calculator-border);
+}
+.team-builder-section{
+    margin-bottom:0.75vw ;
+    border-top: 5px solid var(--teamBuilder-border);
+}
+.karma-section{
+    margin-top:0.75vw ;
+    margin-bottom: 10vw;
+    border-top: 5px solid var(--karma-border);
+}
+@media screen and (max-width:600px){
+    .supervisor-section{
+        /* position: absolute;
+        top:10vh;
+        left: 40vw; */
+        margin-bottom: 3vh;
+    }
+
+    .team-builder-section{
+        /* position: absolute;
+        top: 21vh; */
+        margin-bottom: 3vh;
+    }
+    .karma-section{
+        /* position: absolute;
+        top: 32vh; */
+        margin-bottom: 3vh;
+    }
+    .calculator-section{
+        /* position: absolute;
+        top: 45vh;
+        left:40vw; */
+        margin-bottom: 8vh;
+        margin-left: 0;
+    }
+}
